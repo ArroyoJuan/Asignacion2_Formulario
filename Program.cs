@@ -1,3 +1,5 @@
+using Asignacion2_Formulario.Models;
+
 namespace Asignacion2_Formulario
 {
     public class Program
@@ -8,6 +10,7 @@ namespace Asignacion2_Formulario
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddSingleton<AccesoDatos>();
 
             var app = builder.Build();
 
